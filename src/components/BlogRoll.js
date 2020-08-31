@@ -10,17 +10,18 @@ class BlogRoll extends React.Component {
     return (
       <div 
         className="columns is-multiline" 
-        style={{
-          textDecoration: "none", 
-          color: "black", 
-          border: "solid 1px black", 
-          textAlign: "center",
-          
-        }}
       >
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <div className="is-parent column is-6" key={post.id}         style={{
+              textDecoration: "none", 
+              color: "black", 
+              border: "solid 1px black", 
+              textAlign: "center",
+              marginBottom: "10px",
+              marginLeft: "15%",
+              marginRight: "15%"
+            }}>
               <article
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''

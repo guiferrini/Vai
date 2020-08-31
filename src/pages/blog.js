@@ -13,7 +13,7 @@ export default class BlogIndexPage extends React.Component {
           }}
         >Latest Posts</h1>
         <section>
-          <div className="content">
+          <div className="content" >
             <BlogRoll />
           </div>
           <p><Link to="/" style={{textDecoration: "none", color: "black"}}>Voltar para Principal</Link></p>

@@ -9,17 +9,15 @@ export default function Template({
   return (
     <div className="blog-post-container" >
       <div 
-        className="blog-post"         
+        className="blog-post"   
         style={{
-          textDecoration: "none", 
-          color: "black", 
-          border: "solid 1px black", 
           textAlign: "center",
-          
-        }}
+          marginLeft: "15%",
+          marginRight: "15%"
+        }}      
       >
         <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2> 
+        <h4>{frontmatter.date}</h4> 
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
