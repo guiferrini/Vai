@@ -17,7 +17,7 @@ collections:
       - { name: body, label: Body, widget: markdown }
   - name: principal
     label: Principal
-    folder: principal
+    folder: principal/infos.md
     fields:
       - { name: title, label: Title }
       - { name: body, label: Body }
