@@ -4,40 +4,14 @@
 //   return <div>Hello world!</div>
 // }
 import React from 'react'
-import { Link } from 'gatsby'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default () => {
   return (
     <>
-      <div 
-        className="Col"
-        style={{  
-          display: "flex", 
-          justifyContent: "space-between", 
-          background: "#F0FFFF",
-      }}>  
-        <div 
-          className="Col"  
-          style={{ 
-            display: "flex",
-            justifyContent: "center",
-          }}>
-              <h2 >logo</h2>
-              <h1 >NOME EMPRESA</h1>
-        </div>
-        <nav
-          className="Col" 
-          style={{ 
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-        }}>
-          <p><Link to="/" style={{textDecoration: "none", color: "black", marginRight: "10px",}}>Home/Sobre</Link></p>
-          <p><Link to="/blog" style={{textDecoration: "none", color: "black", marginRight: "10px",}}>Blog</Link></p>
-          <p><Link to="/" style={{textDecoration: "none", color: "black", marginRight: "10px",}}>Cursos</Link></p>
-          <p><Link to="/" style={{textDecoration: "none", color: "black", marginRight: "10px",}}>Contato</Link></p>
-        </nav>
-      </div>
+      <Header />
+      
       <main>
         <section
           style={{ 
@@ -74,16 +48,8 @@ export default () => {
           </form>
         </section>
       </main>
-      <footer 
-        className="Col" 
-        style={{ 
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h5>© Copyright 2020 | 77 Digital Marketing.</h5>
-      </footer>
+      
+      <Footer />
     </>
   )
 }
